@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
+    <title>CBS</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myfrm">
+            <fieldset class="border p-2">
+                <legend class="float-none w-auto p-2">Demandeur  :</legend>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="demandeur" class="form-control" />
+                            <label class="form-label" for="form6Example1">Demandeur</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="mail" class="form-control" />
+                            <label class="form-label" for="form6Example2">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="poste" class="form-control" />
+                            <label class="form-label" for="form6Example1">Poste interne (Numero Tel)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="lab" class="form-control" />
+                            <label class="form-label" for="form6Example2">LAB/UVRR/Sce Analyse</label>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset class="border p-2">
+                <legend class="float-none w-auto p-2">Appareil  :</legend>
+
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="ap" class="form-control" />
+                            <label class="form-label" for="form6Example1">Appareil</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="mar" class="form-control" />
+                            <label class="form-label" for="form6Example1">Marque</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input required type="text" id="ns" class="form-control" />
+                            <label class="form-label" for="form6Example1">N° de Serie</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input  required type="text" id="ni" class="form-control" />
+                            <label class="form-label" for="form6Example2">N° d'inventaire</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input -->
+
+                <div class="form-outline mb-4">
+                    <input required type="text" id="ddp" class="form-control" />
+                    <label class="form-label" for="form6Example3">Description de probleme</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <p>Appareil sous garanti ? </p>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label for="g1">Oui </label>
+                    <input type="radio" class="form-check-input" id="g1" name="garanti" value="Oui"></div>
+                <div class="form-check form-check-inline"> <label for="g2">Non </label>
+                    <input type="radio" class="form-check-input" id="g2" name="garanti" value="Non"></div>
+            </fieldset>
+            <table border=2px>
+                <tr>
+                    <td>L'intervant</td>
+                    <td>Description de l'intervantion</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input required type="text" id="interNom" class="form-control" />
+                                    <label class="form-label" for="form6Example1">Nom</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input required type="text" id="interSociete" class="form-control" />
+                                    <label class="form-label" for="form6Example1">Societe</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col mb-3">
+                                <div class="form-outline">
+                                    <input  required type="text" id="interTel" class="form-control" />
+                                    <label class="form-label" for="form6Example1">Tel</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input required type="text" id="interFax" class="form-control" />
+                                    <label class="form-label" for="form6Example2">Fax</label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-outline mb-4">
+                            <textarea required id="interDes" rows="7" class="form-control"></textarea>
+                            <label class="form-label" for="form6Example4">Description de probleme</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <fieldset class="border p-2">
+                <legend class="float-none w-auto p-2">Etat Appareil</legend>
+                <div class="form-check form-check-inline">
+                    <p>Etat Appareil ? </p>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label for="g1">Reparée </label>
+                    <input  type="radio" class="form-check-input" id="g1" name="etat" value="Reparée"></div>
+                <div class="form-check form-check-inline"> <label for="g2">Non Reparée </label>
+                    <input type="radio" class="form-check-input" id="g2" name="etat" value="Non Reparée"></div>
+                <div class="form-outline mb-4">
+                    <textarea required id="Causeee" rows="7" class="form-control"></textarea>
+                    <label class="form-label" for="form6Example4">Cause</label>
+                </div>
+                <div class="form-outline mb-4">
+                    <input required id="dateinter" type="date" class="form-control" />
+                    <label class="form-label" for="form6Example4">Date recepuration de l'Appareil</label>
+                </div>
+            </fieldset>
+
+
+
+            <!-- Submit button -->
+            <button type="submit" onclick="myPrint('myfrm')" class="btn btn-primary btn-block mb-4">Imprimer Formulaire PDF</button>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+<script>
+    function myPrint(myfrm) {
+        var printdata = document.getElementById(myfrm);
+        var radios = document.getElementsByName('garanti');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+  if (radios[i].checked) {
+   a = radios[i].value ;
+  }}
+
+  var radios2 = document.getElementsByName('etat');
+
+for (var i = 0, length = radios2.length; i < length; i++) {
+  if (radios2[i].checked) {
+   b = radios2[i].value ;
+  }}
+        newwin = window.open("");
+        newwin.document.write("<style>table { width: 100%;}  </style>");
+
+        newwin.document.write("<center><h2>Demande d'intervention en maintenance</h2></center>");
+        newwin.document.write("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>");
+        newwin.document.write("<h5>Demendeur :   "+document.getElementById("demandeur").value+"           <br>Email : "+document.getElementById("mail").value+"</h5><br>");
+        newwin.document.write("<h5>Poste interne (Numero Tel) :    "+document.getElementById("poste").value+"    <br>LAB/UVRR/Sce Analyse : "+document.getElementById("lab").value+"</h5><br>");
+        newwin.document.write("<h5>LAB/UVRR/Sce Analyse :   "+document.getElementById("lab").value+"</h5><br>");
+        newwin.document.write("<h5>Appareil : "+document.getElementById("ap").value+"      <br>Marque : "+document.getElementById("mar").value+
+        +"     N° de Serie : "+document.getElementById("ns").value+"      N° d'inventaire : "+document.getElementById("ni").value+"</h5><br>");
+        newwin.document.write("<h5>Description de probleme : "+document.getElementById("ddp").value+"</h5><br>");
+        newwin.document.write("<h5>Appareil sous garanti  : "+a+"</h5><br>");
+        newwin.document.write("<table border='2'>");
+        newwin.document.write("<tr><th><h5>Nom Intervant :</h5></th><td><h5> "+document.getElementById("interNom").value+"</h5></td><tr>");
+        newwin.document.write("<tr><th><h5>Societe Intervant : </h5></th><td><h5>"+document.getElementById("interSociete").value+"</h5></td><tr>");
+        newwin.document.write("<tr><th><h5>Telephone Intervant :</h5></th><td><h5> "+document.getElementById("interTel").value+"</h5></td><tr>");
+        newwin.document.write("<tr><th><h5>Fax Intervant : </h5></th><td><h5>"+document.getElementById("interFax").value+"</h5></td><tr>");
+        newwin.document.write("<tr><th><h5>Description Intervant : </h5></th><td><h5>"+document.getElementById("interDes").value+"</h5></td><tr>");
+            newwin.document.write("</table><br>");
+            newwin.document.write("<h5>Etat Appareil  : "+b+"</h5><br>");
+        newwin.document.write("<h5>Cause  : "+document.getElementById("Causeee").value+"</h5><br>");
+        newwin.document.write("<h5>Date recepuration de l'Appareil  : "+document.getElementById("dateinter").value+"</h5><br>");
+
+        newwin.print();
+        newwin.close();
+    }
+</script>
+</html>
